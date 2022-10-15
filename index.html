@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vape calc</title>
+</head>
+
+<body>
+    <div class="logo">Vape Calc</div>
+    <div class="inputs">
+        <label class="inputs__block">
+            VG with nicotine value (mg/ml)
+            <input type="number" data-value="nicotineContent" data-bind="nicotineContent" value="20" min="0" max="50">
+            <input type="range" data-value="nicotineContent" data-bind="nicotineContent" min="0" max="50">
+        </label>
+        <label class="inputs__block">
+            Final aroma prc
+            <input type="number" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20" value="5">
+            <input type="range" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20">
+        </label>
+        <label class="inputs__block">
+            Final nicotine (mg/ml)
+            <input type="number" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20" value="5">
+            <input type="range" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20">
+        </label>
+        <label class="inputs__block">
+            Final volume (ml)
+            <input type="number" data-value="fVolume" data-bind="fVolume" min="20" max="300" value="60">
+            <input type="range" data-value="fVolume" data-bind="fVolume" min="20" max="300">
+        </label>
+    </div>
+    <div class="outputs">
+        <div class="div">
+            VG with nicotine (ml): <span class="outputs__value" data-bind="fBaseWithNicoVolume"></span>
+        </div>
+        <div class="div">
+            VG without nicotine (ml): <span class="outputs__value" data-bind="fBaseVolume"></span>
+        </div>
+        <div class="div">
+            PG (ml): <span class="outputs__value" data-bind="fPGValue"></span>
+        </div>
+        <div class="div">
+            Aroma (ml): <span class="outputs__value" data-bind="fAromaVolume"></span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
