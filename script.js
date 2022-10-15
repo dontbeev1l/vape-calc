@@ -44,10 +44,8 @@ class DataBinding {
 
 class Main {
     constructor() {
-        console.log('DOM Loaded');
         this.data = new DataBinding();
         this.data.onDataChange = (prop, value) => {
-            console.log(prop, value);
             this.calculate();
         }
         this.calculate();
@@ -69,10 +67,6 @@ class Main {
         this.data.data.fBaseVolume = Math.round(fBaseVolume * 100) / 100;
         this.data.data.fPGValue = Math.round(fPGValue * 100) / 100;
         this.data.data.fAromaVolume = Math.round(fAromaVolume * 100 ) / 100;
-
-
-        console.log({ fBaseWithNicoVolume, fBaseVolume, fPGValue, fAromaVolume });
-
     }
 }
 

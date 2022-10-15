@@ -1,0 +1,21 @@
+{
+    "name": "Vape Calc by dontbee1vil",
+    "short_name": "Vape Calc",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#323232",
+    "description": "Vape calc",
+    "icons": [
+        
+        {
+            "src": "./icons/96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}

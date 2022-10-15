@@ -49,3 +49,8 @@ body {
 .outputs div+div {
     margin-top: 8px;
 }
+
+.logo__by {
+    font-size: 12px;
+    color: #b3b3b3;
+}

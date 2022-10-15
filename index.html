@@ -5,27 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="./manifest.webmanifest">
     <link rel="stylesheet" href="./style.css">
-    <title>Vape calc</title>
+    <link rel="icon" href="./icons/favicon.svg">
+    <title>Vape Calc by dontbeev1l</title>
 </head>
 
 <body>
-    <div class="logo">Vape Calc</div>
+    <div class="logo">
+        Vape Calc
+        <div class="logo__by">by dontbeev1l</div>
+    </div>
     <div class="inputs">
         <label class="inputs__block">
             VG with nicotine value (mg/ml)
-            <input type="number" data-value="nicotineContent" data-bind="nicotineContent" value="20" min="0" max="50">
-            <input type="range" data-value="nicotineContent" data-bind="nicotineContent" min="0" max="50">
+            <input type="number" data-value="nicotineContent" data-bind="nicotineContent" value="20" min="0" max="50" step="0.5">
+            <input type="range" data-value="nicotineContent" data-bind="nicotineContent" min="0" max="50"  step="0.5">
         </label>
         <label class="inputs__block">
             Final aroma prc
-            <input type="number" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20" value="5">
-            <input type="range" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20">
+            <input type="number" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20" value="5" step="0.5">
+            <input type="range" data-value="fAromePrc" data-bind="fAromePrc" min="0" max="20" step="0.5">
         </label>
         <label class="inputs__block">
             Final nicotine (mg/ml)
-            <input type="number" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20" value="5">
-            <input type="range" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20">
+            <input type="number" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20" value="5"  step="0.25">
+            <input type="range" data-value="fNicotineContent" data-bind="fNicotineContent" min="0" max="20"  step="0.25">
         </label>
         <label class="inputs__block">
             Final volume (ml)
